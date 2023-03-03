@@ -1,0 +1,9 @@
+{
+    "Monday":["Subject 1", "Subject 2", "Subject 3", "Subject 4"],
+    "Tuesday":["Subject 1", "Subject 2", "Subject 3", "Subject 4"],
+    "Wednesday":["Subject 1", "Subject 2", "Subject 3", "Subject 4"],
+    "Thursday":["Subject 1", "Subject 2", "Subject 3", "Subject 4"],
+    "Friday":["Subject 1", "Subject 2", "Subject 3", "Subject 4"],
+    "Saturday": null,
+    "Sunday": null
+}

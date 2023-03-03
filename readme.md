@@ -2,11 +2,44 @@
 ---
 A simple plugin to generate a day planner from a timetable and several spreadsheets.
 
+Example:
+---
+
+Friday, Week A, 2023-03-03
+==========================
+
+# Period 1 - Subject 1, lesson #1
+
+
+Do a thing  
+  
+---
+# Period 2 - Subject 2, lesson #2
+
+
+Do another thing  
+  
+---
+# Period 3 - Subject 3, lesson #3
+
+
+Do a third thing  
+  
+---
+# Period 4 - Subject 4, lesson #4
+
+
+Lorem impusm  
+  
+---
+
+---
+
 ## Setup
 ---
-To set up this plugin, there are 3 steps:
-1. Clone this repo.
-    If you don't use git, click the green `Code` button in the top right and download the zip folder. Extract it wherever you'd like.
+To set up this plugin, there are 5 steps:
+1. Download the `final` folder
+    This folder contains the program, and is all you need. 
 
 2. Add your spreadsheets to the `Lesson Plans` folder. 
 
@@ -25,3 +58,12 @@ In the `lesson_indexes.json` file, you can set several preferences:
     1. `Ask for week numbers` - This controls whether the program will ask what week it is. If you schedule is over multiple weeks, leave this as `true`. Else, set it to `false`, and the program will simply check `A.json` for your timetable.
     2. `Column Number` - This option sets which column the program will look for your lesson plans. Whatever is in this column will be added to the day plan. Columns start from 0: A is column 0, B is 1, C is 2 etc.
     3. `Subject X` - These are your lesson numbers. Change the subject to whatever you had on the timetable (matching the spreadsheet), and set the index to whatever row you're looking up. Once again, rows start from 0, so row 1 is actually row 0 etc. Set this to whatever lesson you'll teach *next*.
+
+5. Run `main.exe` 
+    Running this will first ask you what week it is (If you have that enabled), then generate the file with the current date, eg. `2023-03-02.md`. This file will open in any markdown viewer, such as Notepad, Obsidian, or Typora. These files won't be edited after creation, so feel free to add things to them after they've been generated.
+
+
+
+
+## Data
+I don't see anything of yours, and the program only reads what it needs to. If you don't trust me, you can read the code.
