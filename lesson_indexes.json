@@ -1,6 +1,8 @@
 {
-    "10 Music": 5,
-    "11 Music": 3,
-    "12 Music": 4,
-    "13 Drama": 3
+    "Ask for week numbers": true,
+    "Column Number": 0, 
+    "Subject 1": 1,
+    "Subject 2": 2,
+    "Subject 3": 3,
+    "Subject 4": 4
 }
