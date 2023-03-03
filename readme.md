@@ -1,5 +1,4 @@
 # Day Planner
----
 A simple plugin to generate a day planner from a timetable and several spreadsheets.
 
 Example:
