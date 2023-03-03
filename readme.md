@@ -6,7 +6,7 @@ A simple plugin to generate a day planner from a timetable and several spreadshe
 ---
 To set up this plugin, there are 3 steps:
 1. Clone this repo.
-    If you don't use git, click the green `Code` button in the top right and download the zip folder. Extract it wherever you'd like.
+    If you don't use git, click the green `<> Code` button in the top right and download the zip folder. Extract it wherever you'd like.
 
 2. Add your spreadsheets to the `Lesson Plans` folder. 
 
