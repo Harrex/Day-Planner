@@ -3,7 +3,7 @@ A simple plugin to generate a day planner from a timetable and several spreadshe
 
 Example:
 ---
-
+```
 Friday, Week A, 2023-03-03
 ==========================
 
@@ -31,7 +31,8 @@ Do a third thing
 Lorem impusm  
   
 ---
-
+```
+This will look different depending on which editor you use. That's how it would look in notepad.
 ---
 
 ## Setup
