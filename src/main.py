@@ -6,12 +6,14 @@ import json
 import os, sys
 
 
-application_path = os.path.dirname(sys.executable)
-
 column_number = 1
+
 
 lesson_indexes_file = open("lesson_indexes.json")
 lesson_indexes = json.load(lesson_indexes_file)
+
+lesson_plan_path = lesson_indexes["Lesson Plan Path"]
+
 
 # Don't look at this bit it's embarrasing
 def create_timetable(current_week:str):
@@ -41,7 +43,7 @@ def create_timetable(current_week:str):
 # Creating MD file. If you want to mess with your template, here is the place. #
 # ---------------------------------------------------------------------------- #
     print(today_lesson_plans)
-    final_file = mdutils.MdUtils(file_name=str(datetime.date.today()) + ".md", title=f"{day}, Week {current_week}, {str(datetime.date.today())}")
+    final_file = mdutils.MdUtils(file_name = (lesson_plan_path + "/" + str(datetime.date.today()) + ".md"), title=f"{day}, Week {current_week}, {str(datetime.date.today())}")
     period = 0
     if today_lesson_plans:
         for lesson_plan in today_lesson_plans:
