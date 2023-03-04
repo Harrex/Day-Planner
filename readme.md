@@ -33,7 +33,6 @@ Lorem impusm
 ---
 ```
 This will look different depending on which editor you use. That's how it would look in notepad.
----
 
 ## Setup
 ---
