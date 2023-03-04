@@ -34,13 +34,12 @@ Lorem impusm
 ---
 ```
 This will look different depending on which editor you use. That's how it would look in notepad.
----
 
 ## Setup
 ---
 To set up this plugin, there are 5 steps:
-1. Clone this repo or download as ZIP
-    If you don't use git, go to the green `<> Code` button in the top right, and download as ZIP. Extract this to a sensible location (not downloads) and go into the `Final` folder.
+1. Download the program
+    Go to the green `<> Code` button in the top right corner and download as a zip folder. Extract it to a sensible location (not downloads), and move into the `Final` folder.
 
 2. Add your spreadsheets to the `Lesson Plans` folder. 
 
