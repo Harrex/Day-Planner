@@ -62,6 +62,7 @@ In the `lesson_indexes.json` file, you can set several preferences:
 ```
 "Lesson Plan Path": "C:/Users/[Username]/Desktop/Lesson Plans"
 ```
+
 To get the path to a folder on Windows, right click on the folder and click `Copy As Path`. You will have to replace all of the backslashes (\) with forward slashes (/) because backslashes can cause issues.
 
 
