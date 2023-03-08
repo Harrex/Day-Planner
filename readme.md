@@ -44,7 +44,7 @@ To set up this plugin, there are 5 steps:
 2. Add your spreadsheets to the `Lesson Plans` folder. 
 
 3. Set your timetable
-    To add your timetable, go to `A.json` and `B.json`. If you're schedule is weekly, not fortnightly, lucky you! You can delete `B.json`.
+    To add your timetable, go to `A.json` and `B.json`. If you're schedule is weekly, not fortnightly, lucky you! You can delete `B.json`, and if you have 3 weeks or more in your schedule, accept my condolences. Feel free to add `C.json` and so on. Just don't rename `A.json`, because that'll break things.
     Here, set your timetable for each day. Have as many classes as you'd like, but make sure you have them surrounded by a string. They should match your spreadsheet names.
     Here is an example:
 
