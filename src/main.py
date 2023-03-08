@@ -5,16 +5,26 @@ import json
 
 import os, sys
 
+def main():
+    lesson_indexes = json.load(open("lesson_indexes.json"))
+    column_number = lesson_indexes["Column Number"]
+    while True:
+        if lesson_indexes["Ask for week numbers"]: # Read the JSON file - If this value is true, ask for the week number, otherwise just run
+            if create_timetable(input("Current Week (A/B): "), lesson_indexes, column_number):
+                input("Success! Press enter to continue.")
+                break
+            else:
+                input("Failed to create timetable - Did you type the week correctly? \n Press enter to continue.")
+                break
+        else:
+            if create_timetable("A", lesson_indexes, column_number):
+                input("Success! Press enter to continue.")
+                break
+            else:
+                input("Failed to create timetable - Have you set up the program correctly? Check the github page or the readme for instructions. \n Press enter to continue.")
+                break
 
-column_number = 1
-
-
-lesson_indexes_file = open("lesson_indexes.json")
-lesson_indexes = json.load(lesson_indexes_file)
-
-
-# Don't look at this bit it's embarrasing
-def create_timetable(current_week:str):
+def create_timetable(current_week:str, lesson_indexes, column_number):
     try:
         timetable = json.load(open(current_week + ".json"))
     except:
@@ -24,11 +34,10 @@ def create_timetable(current_week:str):
     print(day)
     if lessons := timetable[day]:
         today_lesson_plans = []
+        sheet = pandas.read_excel("Lesson Plans/" + lesson + ".xlsx", header=None)
 
         for lesson in lessons:
-            sheet = pandas.read_excel("Lesson Plans/" + lesson + ".xlsx", header=None)
             current_lesson = int(lesson_indexes[lesson])
-            lesson_indexes_file.seek(0)
             json.dump(lesson_indexes, open(
                 "lesson_indexes.json", 'w'), indent=4)
             plan = sheet.iloc[int(current_lesson)][column_number]
@@ -62,12 +71,7 @@ def create_timetable(current_week:str):
     return True
 
 
-while True:
-    if lesson_indexes["Ask for week numbers"]:
-        if create_timetable(input("Current Week (A/B): ")):
-            input("Success! Press any key to continue.")
-            break
-        else:
-            print("Failed to create timetable - Did you type the week correctly?")
-    else:
-        create_timetable("A")
+
+
+if __name__ == "__main__":
+    main()
